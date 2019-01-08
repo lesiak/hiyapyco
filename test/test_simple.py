@@ -5,17 +5,7 @@ import os
 import logging
 import platform
 import hiyapyco
-
-sys.path.insert(
-        0,
-        os.path.join(
-            os.path.dirname(
-                os.path.realpath(os.path.abspath(sys.argv[0]))
-                ),
-            'lib'
-            )
-        )
-import testsetup
+from lib import testsetup
 
 logger = testsetup.setup(sys.argv[1:])
 
